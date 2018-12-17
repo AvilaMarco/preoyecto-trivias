@@ -359,33 +359,6 @@ nav
   }
 }
 
-
-/*
-#pantalla-resultado .trivia-resultado-bien,
-#pantalla-resultado .trivia-resultado-mal
-{
-  display:block;
-}
-/*
-#pantalla-resultado.bien .trivia-resultado-bien
-{
-display:block;
-}
-#pantalla-resultado.bien .trivia-resultado-mal
-{
-display:none;
-}
-
-
-#pantalla-resultado.mal .trivia-resultado-mal
-{
-display:block;
-}
-#pantalla-resultado.mal .trivia-resultado-bien
-{
-display:none;
-}
-
 /***************Instrucciones, Acerca de*****************/
 
 #pantalla-instrucciones,#pantalla-acerca_de
