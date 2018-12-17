@@ -1,9 +1,9 @@
-/*
+﻿/*
 Archivo: datos_preguntas.js
 Configuración de las preguntas del juego.
 */
 
-let preguntas =
+var preguntas =
 [
 
     {
@@ -165,7 +165,7 @@ var preguntas2 =
     [
       "Porque la cola no puede mover al perro",
       "Porque es otra parte del cuerpo que pueden mover, como las patas",
-      "Porque es su manera de expresarse para demostrar alegría, tristeza",
+      "Porque es su manera de expresarse para demostrar alegría, tristeza, etc",
       "Todas son correctas"
     ],
     respuesta_correcta : "Todas son correctas",

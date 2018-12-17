@@ -6,7 +6,6 @@ html,body
   padding:0;
   border:0;
   margin:0;
-  font-family:Roboto,sans-serif;
 }
 
 body
@@ -53,7 +52,7 @@ nav
   margin:0;
 }
 
-main
+/* main
 {
 
   background-image:url(../img/bg_auto.png);
@@ -77,7 +76,7 @@ main
   {
     min-height:700px;
   }
-}
+} */
 
 #botonMusica
 {

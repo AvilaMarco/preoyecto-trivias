@@ -6,9 +6,9 @@ navegación y funciones auxiliares.
 
 // Expande y contrae el menú en vísta móvil
 // ... alternando la clase "collapse" de bootstrap
-document.querySelector('.navbar-toggler').addEventListener('click', function () {
-  document.querySelector('.navbar-collapse').classList.toggle('collapse');
-});
+// document.querySelector('.navbar-toggler').addEventListener('click', function () {
+//   document.querySelector('.navbar-collapse').classList.toggle('collapse');
+// });
 
 
 // Inicia el juego si en el link se indica el anchor #jugar
