@@ -39,7 +39,6 @@ botonSiguiente.addEventListener("click", manejadorBotónSiguiente);
 botonVolverAJugar.addEventListener("click", reinicio);
 botonMusica.addEventListener("click", reproducir);
 selecciontema.addEventListener("change",fondos);
-
 function fondos()
 {
 	background.classList.remove("fondohunter","fondoanimal");

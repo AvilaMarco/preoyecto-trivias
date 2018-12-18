@@ -30,18 +30,18 @@ font-family: 'Patrick Hand', cursive;
   position: relative;
   top: 4%;
 }
+
 .header a
 {
-  position: relative;
-  left: 3%;
+  float: left;
+  margin-left: 2%;
 	color: white;
-  font-size: 25px;
 	text-decoration: none;
-	padding: 0px 3px 3px 3px;
+	padding: 3px;
 	border: 2px solid #11d8d2;
 	border-radius: 3px;
 	background-color: #0f0b7a;
-  overflow: auto;
+	overflow: hidden;
 }
 
 /*le quita la sobra azulada tan molesta*/
@@ -49,15 +49,14 @@ select:focus{ outline: none;}
 
 select
 {
-  position: relative;
-  left: 80%;
-	transform: scale(1.5,1.5);
+  float: right;
+	margin-right: 2%;
+	color: white;
 	padding: 3px;
 	border: 2px solid #11d8d2;
 	background-color: #0f0b7a;
-	color: white;
 	border-radius: 3px;
-  overflow: auto;
+	overflow: hidden;
 }
 
 .principal
@@ -67,16 +66,15 @@ select
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
-
+	top: 41%;
 }
 
-h1{background-color: black; border-radius: 10px;}
+h1{background-color: black; border-radius: 10px;text-align: center;}
 
 .enlaces
 {
 	position: relative;
-	top: 80%;
+	top: 75%;
 }
 
 /*input*/
@@ -101,9 +99,18 @@ h1{background-color: black; border-radius: 10px;}
 	transition: 0.7s;
 }
 
-
-@media (max-width: 622px) and (min-width: 360px)
+@media (max-width: 622px) and (min-width: 320px)
 {
+	.header a
+	{
+		transform: scale(1.6,1.6);
+		margin-left: 10%;
+	}
+	select
+	{
+		transform: scale(1.6,1.6);
+		margin-right: 15%;
+	}
   .fondohunter
   {
   	background: url("../img/fondo-celu.jpg") center;
@@ -115,22 +122,34 @@ h1{background-color: black; border-radius: 10px;}
   	background: url("../img/fondoamimal.jpg") no-repeat fixed center;
   	background-size: cover;
   }
+	.principal
+	{
+		top: 40%;
+	}
   .enlaces
   {
   	position: relative;
-  	top: 70%;
+  	top: 65%;
   }
+}
+
+@media (min-width:623px)
+{
+	.background
+	{
+		font-size: 30px;
+	}
 }
 
 @media (min-width: 1370px)
 {
   .background
   {
-    font-size: 30px;
+    font-size: 35px;
   }
   h1
   {
-    transform: scale(1.4,1.4);
+    transform: scale(1.8,1.8);
   }
   .enlaces a
   {
