@@ -123,6 +123,38 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
 	text-transform: uppercase;
 }
 
+/* estilos juego */
+.preguntaPrincipal
+{
+	display: block;
+	margin: auto;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+#opciones
+{
+	height: 120px;
+}
+
+#opciones > div
+{
+	float: left;
+	width: 50%;
+	max-width: 420px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	overflow:hidden;
+	display: block;
+	margin: auto;
+}
+
+.opc1
+{
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
 @media (max-width: 622px) and (min-width: 320px)
 {
 	.header a

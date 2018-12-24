@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
   <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="question juego de preguntas con diferentes tematicas">
+    <meta name="author" content="marco avila">
 
-  <title>Trivias - Aprendé programando</title>
+    <title>Trivias - Aprendé programando</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Estilos del sitio -->
-  <link href="./css/estilos.css" rel="stylesheet">
-  <link href="./css/estilosNuevos.css" rel="stylesheet">
+    <!-- Estilos del sitio -->
+    <link href="./css/estilos.css" rel="stylesheet">
+    <link href="./css/estilosNuevos.css" rel="stylesheet">
 
-  <!-- fuente -->
-  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-
+    <!-- fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
   </head>
 
   <body>
+
     <!-- menu para elegir pregnutas -->
     <div class="background conteiner-fluid">
       <div class="header" id="ayuda">
@@ -39,8 +39,10 @@
         <a id="botonjugar">jugar</a>
       </div>
     </div>
-    <main role="main" class="container fill">
+
+
       <div id="pantalla-juego" class="d-none container px-1 px-md-3  px-lg-5">
+        <!-- links -->
         <div class="row text-center mt-3">
           <div class="col-6">
             <a class="botoncito" href="index.html">menu</a>
@@ -49,8 +51,9 @@
             <a class="botoncito" href="instrucciones.html">ayuda</a>
           </div>
         </div>
+        <!-- pregnuta -->
         <div class="row">
-          <div class="col-12 col-md-6 mt-4">
+          <div class="col-12 col-md-6 mt-4 container-fluid">
             <div class="trivia-tarjeta trivia-bg-blanco trivia-box-shadow">
               <div class="p-2 p-md-3 trivia-bg-naranja-claro titulo text-center">
                 <span id="pregunta-texto">***************</span>
@@ -61,32 +64,39 @@
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-md-6 mt-4">
-            <div id="opciones" class="opciones">
-              <div class="opc1 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
-                <input type="radio" name="respuesta" id="opc1" value="Opción 1"> <label for="opc1">Opción 1</label>
-              </div>
-
-              <div class="opc2 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
-                <input type="radio" name="respuesta" id="opc2" value="Opción 2"> <label for="opc2">Opción 2</label>
-              </div>
-
-              <div class="opc3 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
-                <input type="radio" name="respuesta" id="opc3" value="Opción 3"> <label for="opc3">Opción 3</label>
-              </div>
-
-              <div class="opc4 p-2 p-md-3 trivia-opcion trivia-bg-blanco trivia-box-shadow">
-                <input type="radio" name="respuesta" id="opc4" value="Opción 3"> <label for="opc4">Opción 4</label>
-              </div>
+        </div>
+          <!-- opcuiones -->
+        <div class="row">
+          <div id="opciones" class="col-12">
+            <div class="opc1 p-2 p-md-2 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+              <input type="radio" name="respuesta" id="opc1" value="Opción 1">
+              <label for="opc1">Opción 1</label>
             </div>
-            <div class="p-1 text-right botonesPartida">
-              <a id="botonMusica" class="col-5 col-sm-4 btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow">reproducir musica</a>
 
-              <a id="boton-verificar" class="col-3 col-sm-2 col-md-3 m-2 text-center btn btn-primary  text-white trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow">Verificar</a>
-
-              <a id="boton-siguiente" class="col-4 col-sm-3 col-md-4 m-2 d-none text-center btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#">Siguiente</a>
+            <div class="opc2 p-2 p-md-2 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+              <input type="radio" name="respuesta" id="opc2" value="Opción 2">
+              <label for="opc2">Opción 2</label>
             </div>
+
+            <div class="opc3 p-2 p-md-2 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+              <input type="radio" name="respuesta" id="opc3" value="Opción 3">
+              <label for="opc3">Opción 3</label>
+            </div>
+
+            <div class="opc4 p-2 p-md-2 trivia-opcion trivia-bg-blanco trivia-box-shadow">
+              <input type="radio" name="respuesta" id="opc4" value="Opción 3">
+              <label for="opc4">Opción 4</label>
+            </div>
+          </div>
+        </div>
+        <!-- botones -->
+        <div class="row">
+          <div class="p-1 text-right botonesPartida">
+            <a id="botonMusica" class="col-5 col-sm-4 btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow">reproducir musica</a>
+
+            <a id="boton-verificar" class="col-3 col-sm-2 col-md-3 m-2 text-center btn btn-primary  text-white trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow">Verificar</a>
+
+            <a id="boton-siguiente" class="col-4 col-sm-3 col-md-4 m-2 d-none text-center btn btn-primary trivia-bg-naranja-obscuro trivia-border-none trivia-box-shadow" href="#">Siguiente</a>
           </div>
         </div>
 
@@ -132,7 +142,7 @@
         </div>
       </div>
 
-    </main>
+
 
     <!-- script general para elementos gráficos del template html -->
     <script type="text/javascript" src="js/script.js"></script>
