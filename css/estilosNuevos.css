@@ -108,7 +108,7 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
 {
 	background-color: black;
 	border-radius: 4px;
-	padding: 3px;
+	padding: 2px;
 	text-decoration: none;
 	font-size: 30px;
 	color: #40b52d;
@@ -125,8 +125,17 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
 {
 	display: block;
 	margin: auto;
-	height: 500px;
+	max-height: 500px;
 	overflow: hidden;
+}
+
+#pregunta-imagen
+{
+  width:100%;
+  height: 100%;
+  margin:auto;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 #opciones
@@ -147,6 +156,10 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
 {
 	margin-right: 7px;
 	margin-left: 33px;
+}
+#opciones > div>label
+{
+	display: inline;
 }
 
 .botonesPartida > a
@@ -190,6 +203,48 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
   	position: relative;
   	top: 65%;
   }
+	/* juego */
+	.preguntaPrincipal
+	{
+		max-height: 350px;
+	}
+
+	#opciones
+	{
+		height: auto;
+	}
+
+	#opciones > div
+	{
+		float: left;
+		width: 100%;
+		max-width: 615px;
+		overflow: hidden;
+	}
+	.opc3,
+	.opc1
+	{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.botonesPartida > a
+	{
+		display: inline-block;
+		text-align: center;
+		width: 45%;
+		overflow: hidden;
+		margin-right: 7px;
+	}
+
+	#pregunta-imagen
+	{
+	  width:100%;
+	  height: 100%;
+	  margin:auto;
+	  max-width: 300px;
+	  max-height: 300px;
+	}
 }
 
 @media (min-width:623px)
