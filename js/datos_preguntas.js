@@ -79,7 +79,7 @@ var preguntas =
       'lagarto melanin',
       "bestia voladora de seis piernas"
     ],
-    imagen_src:'img/preguntas/aguila-araña.png',
+    imagen_src:'img/preguntas/hunterxLogo.png',
     respuesta_correcta: 'águila-araña'
   },
   {
