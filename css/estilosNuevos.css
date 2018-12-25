@@ -1,0 +1,278 @@
+*
+{
+	margin: 0px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+/*cambiar fondos con clases*/
+.background
+{
+  width: 100%;
+	height: 100%;
+	background-color: black;
+	color: white;
+}
+
+.fondohunter
+{
+	background: url("../img/fondo.jpg") center;
+	background-size: cover;
+}
+
+.fondoanimal
+{
+	background: url("../img/fondoamimal.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+/*cambiar fondos con clases ↑*/
+
+/* estilos menu juego */
+.header
+{
+  position: relative;
+  top: 4%;
+}
+
+.header a
+{
+  float: left;
+  margin-left: 2%;
+	color: white;
+	text-decoration: none;
+	padding: 3px;
+	border: 2px solid #11d8d2;
+	border-radius: 8px;
+	background-color: #0f0b7a;
+	overflow: hidden;
+}
+
+/*le quita la sobra azulada tan molesta*/
+select:focus{ outline: none;}
+
+select
+{
+  float: right;
+	margin-right: 2%;
+	color: white;
+	padding: 3px;
+	border: 2px solid #11d8d2;
+	background-color: #0f0b7a;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.principal
+{
+  font-family: 'Major Mono Display', monospace;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	top: 41%;
+}
+
+h1{background-color: black; border-radius: 10px;text-align: center;}
+
+.enlaces
+{
+	position: relative;
+	top: 75%;
+}
+
+/*input*/
+.enlaces a
+{
+	display: block;
+	margin: auto;
+	border-radius: 18px 0px 18px 0px;
+	font-size: 30px;
+	text-decoration: none;
+	border: 4px inset #11d8d2;
+	background: linear-gradient(to bottom, #021d47, #0f56c4);
+	width: 150px;
+	text-align: center;
+	color: white;
+	padding-bottom: 5px;
+}
+
+.enlaces a:hover
+{
+	transform: scale(1.3,1.3);
+	transition: 0.7s;
+}
+
+
+/* estilos menu juego ↑*/
+/* estilos pantalla opciones */
+.botoncito
+{
+	background-color: black;
+	border-radius: 4px;
+	padding: 3px;
+	text-decoration: none;
+	font-size: 30px;
+	color: #40b52d;
+}
+
+.botoncito:hover
+{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* estilos juego */
+.preguntaPrincipal
+{
+	display: block;
+	margin: auto;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+#pregunta-imagen
+{
+  width:100%;
+  height: 100%;
+  margin:auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#opciones
+{
+	height: 120px;
+	position: static;
+}
+
+#opciones > div
+{
+	float: left;
+	width: 50%;
+	max-width: 440px;
+	overflow: hidden;
+}
+.opc3,
+.opc1
+{
+	margin-right: 7px;
+	margin-left: 33px;
+}
+#opciones > div>label
+{
+	display: inline;
+}
+
+.botonesPartida > a
+{
+	display: inline-block;
+	text-align: center;
+	width: 49%;
+	overflow: hidden;
+	margin-right: 7px;
+}
+
+@media (max-width: 622px) and (min-width: 320px)
+{
+	.header a
+	{
+		transform: scale(1.6,1.6);
+		margin-left: 10%;
+	}
+	select
+	{
+		transform: scale(1.6,1.6);
+		margin-right: 15%;
+	}
+  .fondohunter
+  {
+  	background: url("../img/fondo-celu.jpg") center;
+  	background-size: cover;
+  }
+
+  .fondoanimal
+  {
+  	background: url("../img/fondoamimal.jpg") no-repeat fixed center;
+  	background-size: cover;
+  }
+	.principal
+	{
+		top: 40%;
+	}
+  .enlaces
+  {
+  	position: relative;
+  	top: 65%;
+  }
+<<<<<<< HEAD
+=======
+	/* juego */
+	.preguntaPrincipal
+	{
+		max-height: 350px;
+	}
+
+	#opciones
+	{
+		height: auto;
+	}
+
+	#opciones > div
+	{
+		float: left;
+		width: 100%;
+		max-width: 615px;
+		overflow: hidden;
+	}
+	.opc3,
+	.opc1
+	{
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.botonesPartida > a
+	{
+		display: inline-block;
+		text-align: center;
+		width: 45%;
+		overflow: hidden;
+		margin-right: 7px;
+	}
+
+	#pregunta-imagen
+	{
+	  width:100%;
+	  height: 100%;
+	  margin:auto;
+	  max-width: 300px;
+	  max-height: 300px;
+	}
+
+@media (min-width:623px)
+{
+	.background
+	{
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1370px)
+{
+  .background
+  {
+    font-size: 35px;
+  }
+  h1
+  {
+    transform: scale(1.8,1.8);
+  }
+  .enlaces a
+  {
+    transform: scale(1.4,1.4);
+  }
+  .enlaces a:hover
+  {
+  	transform: scale(1.7,1.7);
+  	transition: 0.7s;
+  }
+}

@@ -3,21 +3,15 @@ html,body
 {
   width:100%;
   height:100%;
-  padding:0;
-  border:0;
-  margin:0;
-  font-family:Roboto,sans-serif;
+  /* padding:0px;
+  border:0px; */
+  margin:0px;
 }
 
 body
 {
-  /*
-  background-image:url(../img/bg_auto.png);
-  background-repeat:no-repeat;
-  background-position:center bottom;
-  background-size:100% auto;*/
-  background-color:#00AE97;
-
+  /* background-color:#005fad; */
+  background-image: url(../img/fondoT.jpg);
 }
 
 .trivia-border-none
@@ -40,48 +34,13 @@ nav
 {
   width:100%;
   max-width:100%;
-
   max-width:1024px;
-
-  /*height:100%;*/
-
   padding:0;
 }
 
 .row
 {
   margin:0;
-}
-
-main
-{
-
-  background-image:url(../img/bg_auto.png);
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:100%;
-  background-color:white;
-}
-
-@media (min-width: 360px)
-{
-  main
-  {
-    min-height:490px;
-  }
-}
-
-@media (min-width: 1024px)
-{
-  main
-  {
-    min-height:700px;
-  }
-}
-
-#botonMusica
-{
-  float: left;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -109,7 +68,7 @@ main
 
 .trivia-bg-naranja-claro
 {
-  background-color:#FF9400;
+  background-color:#3eb52c;
 }
 
 .trivia-bg-naranja-obscuro,.trivia-bg-naranja-obscuro:hover
@@ -168,10 +127,9 @@ main
   text-shadow:2px 2px 2px #444;
 }
 
-
 .trivia-tarjeta
 {
-  margin-bottom:40px;
+  margin-bottom:15px;
 }
 
 .trivia-tarjeta .titulo
@@ -183,74 +141,24 @@ main
 {
   border:1px solid #B5B5B5;
   border-top:0;
+  max-height: 500px;
+  background-size: cover;
 }
 
 .trivia-tarjeta,.trivia-opcion
 {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow:hidden;
 }
-
-/******************inicio*******************/
-#pantalla-inicio
+@media (max-width: 622px) and (min-width: 320px)
 {
-  background-color:#00AE97;
-  background-image:url(../img/bg_home.gif);
-  background-size:contain;
-  background-position:center 56px;
-  background-repeat:no-repeat;
-
-  position:relative;
-
-  min-height: 100%;
-  height: 100%;
-
-  margin-top:-56px;
-}
-
-#inicio-logo
-{
-  position:absolute;
-  left:30px;
-  top:30px;
-}
-
-#inicio-boton-jugar
-{
-  position:absolute;
-  bottom:50px;
-  right:55px;
-}
-
-#botonMusica2
-{
-  position:absolute;
-  bottom:50px;
-  left:55px;
-}
-@media (min-width: 360px)
-{
-  #pantalla-inicio
+  .trivia-tarjeta .cuerpo
   {
-    background-image:url(../img/fondo-celu.jpg);
-    height: 200%;
-    min-height: 600px;
-
+    max-height: 300px;
   }
 }
-
-@media (min-width: 1024px)
-{
-  #pantalla-inicio
-  {
-    background-image:url(../img/bg_home.gif);
-    height:100%;
-    min-height:700px;
-  }
-}
-
 /***************juego*****************/
 #pantalla-juego
 {
@@ -260,7 +168,6 @@ main
   background: -webkit-linear-gradient(top, rgba(0,152,129,1) 1%,rgba(245,255,255,0.1) 77%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,152,129,1) 1%,rgba(245,255,255,0.1) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009881', endColorstr='#f5ffff',GradientType=0 ); /* IE6-9 */
-
 }
 
 .trivia-opcion
@@ -281,16 +188,6 @@ main
   background-color:#FF585E;
 }
 
-.trivia-opcion label
-{
-  display: inline;
-}
-
-#pregunta-imagen
-{
-  width:100%;
-  margin:auto;
-}
 
 #pregunta-numero,#pregunta-texto
 {
@@ -358,33 +255,6 @@ main
     display: inline-block;
     margin:auto;
   }
-}
-
-
-/*
-#pantalla-resultado .trivia-resultado-bien,
-#pantalla-resultado .trivia-resultado-mal
-{
-  display:block;
-}
-/*
-#pantalla-resultado.bien .trivia-resultado-bien
-{
-display:block;
-}
-#pantalla-resultado.bien .trivia-resultado-mal
-{
-display:none;
-}
-
-
-#pantalla-resultado.mal .trivia-resultado-mal
-{
-display:block;
-}
-#pantalla-resultado.mal .trivia-resultado-bien
-{
-display:none;
 }
 
 /***************Instrucciones, Acerca de*****************/

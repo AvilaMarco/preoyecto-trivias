@@ -4,99 +4,77 @@ var totalPuntos = 0;
 const NombreAlumno = "Marco Avila";
 const MaximoPreguntasPorJugada = 10;
 const PuntosResultadoBien = 7;
-var musica = new Audio('op1.mp3');
-  musica.loop  =true;
-  musica.muted  =true;
-var musica2 = new Audio('leaf.mp3');
-  musica.loop  =true;
-  musica.muted  =true;
+var musicaHunter = new Audio('op1.mp3');
+  musicaHunter.loop  =true;
+  musicaHunter.muted  =true;
+var musicaGeneral = new Audio('leaf.mp3');
+  musicaGeneral.loop  =true;
+  musicaGeneral.muted  =true;
+var cancionActual;
 var preguntasBloques;
 var simulador = 0;
 
 //referencia a objetos del html
 var htmlSimulador = document.querySelectorAll("#opcionesPreguntas input");
-var div_opciones = document.querySelectorAll("#opciones div");opcionesPreguntas
+var div_opciones = document.querySelectorAll("#opciones div");
 var input_opciones = document.querySelectorAll("#opciones input");
 var label_opciones = document.querySelectorAll("#opciones label");
 var pantallaResultado = document.querySelector("#pantalla-resultado");
 var pantallaPuntos = document.querySelector("#resultado-puntos");
 var pantallaMal = document.querySelectorAll(".trivia-resultado-mal");
 var pantallaBien = document.querySelectorAll(".trivia-resultado-bien");
+var selecciontema = document.querySelector(".elegirtema");
+var background = document.querySelector(".background");
 
 //botones
-var botonJugar = document.querySelector("#inicio-boton-jugar").addEventListener("click", iniciarJuego);
+var botonJugar = document.querySelector("#botonjugar").addEventListener("click", iniciarJuego);
 var botonVerificar = document.querySelector("#boton-verificar");
 var botonSiguiente = document.querySelector("#boton-siguiente");
 var botonVolverAJugar = document.querySelector("#resultado-boton-volver-a-jugar");
-var botonSeleccion = document.querySelector("#botonSeleccion");
 var botonMusica = document.querySelector("#botonMusica");
-var botonMusica2 = document.querySelector("#botonMusica2");
-var botonMusica3 = document.querySelector("#botonMusica3");
 
 //eventos
 botonVerificar.addEventListener("click", verificarPreguntaActual);
 botonSiguiente.addEventListener("click", manejadorBotónSiguiente);
 botonVolverAJugar.addEventListener("click", reinicio);
-botonMusica.addEventListener("click", pausar);
-botonMusica2.addEventListener("click", play2);
-botonMusica3.addEventListener("click", play3);
-botonSeleccion.addEventListener("click",avanzarAJuego);
-
-function asignarSimulador()
+botonMusica.addEventListener("click", reproducir);
+selecciontema.addEventListener("change",fondos);
+function fondos()
 {
-  for (aux of htmlSimulador)
-  {
-    if(aux.checked)
-    {
-      simulador = aux.value;
-    }
-  }
+	background.classList.remove("fondohunter","fondoanimal");
+	if (selecciontema.value == 1)
+	{
+		background.classList.add("fondohunter");
+	}else if(selecciontema.value == 2)
+	{
+		background.classList.add("fondoanimal");
+	}
 }
 
 function elegirPreguntas()
 {
   //expresion depende edl valor que reciba del html
-  switch (simulador)
+  switch (selecciontema.value)
   {
     case "1":
       preguntasBloques = preguntas[indicePreguntaActual];
       if(indicePreguntaActual == 0){desordenarArray(preguntas);}
+      cancionActual = musicaHunter;
       break;
     case "2":
       preguntasBloques = preguntas2[indicePreguntaActual];
       if(indicePreguntaActual == 0){desordenarArray(preguntas2);}
+      cancionActual = musicaGeneral;
       break;
     default:
   }
 }
 
-function play3()
+function reproducir()
 {
-  musica2.play();
-  musica2.muted = !musica2.muted;
-  if(musica2.muted){
-    botonMusica3.textContent = "reproducir musica";
-  }else{
-    botonMusica3.textContent = "pausar musica";
-  }
-}
-
-function play2()
-{
-  musica.play();
-  musica.muted = !musica.muted;
-  if(musica.muted){
-    botonMusica2.textContent = "reproducir musica";
-  }else{
-    botonMusica2.textContent = "pausar musica";
-  }
-}
-
-function pausar()
-{
-  musica.play();
-  musica.muted = !musica.muted;
-  if(musica.muted){
+  cancionActual.play();
+  cancionActual.muted = !cancionActual.muted;
+  if(cancionActual.muted){
     botonMusica.textContent = "reproducir musica";
   }else{
     botonMusica.textContent = "pausar musica";
@@ -108,24 +86,21 @@ function reinicio()
   pantallaResultado.classList.add("d-none");
   totalPuntos = 0;
   indicePreguntaActual = 0;
-  iniciarJuego()
-  //cuando agregue otras trivias document.querySelector("#pantalla-inicio").classList.remove("d-none");
-}
-
-function avanzarAJuego()
-{
-  asignarSimulador();
-  document.querySelector("#elecionDePreguntas").classList.add("d-none");
-  document.querySelector("#pantalla-inicio").classList.remove("d-none");
+  //cuando agregue otras trivias
+  document.querySelector(".background").classList.remove("d-none");
 }
 
 function iniciarJuego()
 {
-  document.querySelector("#pantalla-inicio").classList.add("d-none");
-  document.querySelector("#header").classList.remove("d-none");
-  document.querySelector("#pantalla-juego").classList.remove("d-none");
-  elegirPreguntas();
-  mostrarPregunta(preguntasBloques);
+  if(selecciontema.value != 0)
+  {
+    document.querySelector(".background").classList.add("d-none");
+    document.querySelector("#pantalla-juego").classList.remove("d-none");
+    elegirPreguntas();
+    mostrarPregunta(preguntasBloques);
+  }else {
+    alert("elija una opcion");
+  }
 }
 
 function mostrarPregunta(pregunta)
@@ -182,7 +157,6 @@ function manejadorBotónSiguiente()
 
 function mostrarResultado()
 {
-  document.querySelector("#header").classList.add("d-none");
   document.querySelector("#pantalla-juego").classList.add("d-none");
   if(totalPuntos >= PuntosResultadoBien)
   {

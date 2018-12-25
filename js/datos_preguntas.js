@@ -1,121 +1,120 @@
-/*
+﻿/*
 Archivo: datos_preguntas.js
 Configuración de las preguntas del juego.
 */
 
-let preguntas =
+var preguntas =
 [
-
-    {
-      pregunta:'¿Por qué Gon quiere convertirse en cazador?',
-      opciones:[
-        'Para conocer a su padre',
-        'Para viajar por el mundo',
-        'Para encontrar a su padre',
-        "Para saber porque su padre deseaba tanto ser un cazador"
-      ],
-      imagen_src:'img/preguntas/gon-chibi.jpg',
-      respuesta_correcta: 'Para saber porque su padre deseaba tanto ser un cazador'
-    },
-    {
-      pregunta:'¿A quién debía atrapar Gon para que Mito-san le dejara tomar el examen de cazador?',
-      opciones:[
-        'al señor del lago',
-        'a Ging',
-        'al oso-zorro',
-        "a una ballena"
-      ],
-      imagen_src:'img/preguntas/gon-chibi.jpg',
-      respuesta_correcta: 'al señor del lago'
-    },
-    {
-      pregunta:'¿Cuántos años tiene Gon?',
-      opciones:[
-        '12',
-        '11',
-        '10',
-        "13"
-      ],
-      imagen_src:'img/preguntas/gon-chibi.jpg',
-      respuesta_correcta: '12'
-    },
-    {
-      pregunta:'¿Cómo se llama la bestia mágica de la imagen?',
-      opciones:[
-        'kiriko',
-        'bestia mafutatsu',
-        'gran pisotón',
-        "hormiga kimera"
-      ],
-      imagen_src:'img/preguntas/Kiriko.png',
-      respuesta_correcta: 'kiriko'
-    },
-    {
-      pregunta:'¿Cuál es el nombre del aplasta novatos?',
-      opciones:[
-        'Tompa',
-        'Rompa',
-        'Tomoe',
-        "Tomki"
-      ],
-      imagen_src:'img/preguntas/tompa.png',
-      respuesta_correcta: 'Tompa'
-    },
-    {
-      pregunta:'¿Por qué Leorio quería tomar el examen de cazador?',
-      opciones:[
-        'Porque quería mucho dinero',
-        'Porque quiere ser medico',
-        'Porque quiere salvar a los niños de su pueblo',
-        "Porque quería ser el mejor cazador del mundo"
-      ],
-      imagen_src:'img/preguntas/leorio.png',
-      respuesta_correcta: 'Porque quería mucho dinero'
-    },
-    {
-      pregunta:'Cuando nadie pudo pasar la segunda etapa del examen de cazador rehicieron la prueba ¿de qué animal tenían que conseguir un huevo para poder completar esa etapa?',
-      opciones:[
-        'águila-araña',
-        'dragón',
-        'lagarto melanin',
-        "bestia voladora de seis piernas"
-      ],
-      imagen_src:'img/preguntas/aguila-araña.png',
-      respuesta_correcta: 'águila-araña'
-    },
-    {
-      pregunta:'En este juego ¿Qué vela había manipulado el preso Sedokan?',
-      opciones:[
-        'La vela corta',
-        'La vela larga',
-        'Ambas velas',
-        "Ninguna de las que mostro"
-      ],
-      imagen_src:'img/preguntas/velas.jpg',
-      respuesta_correcta: 'Ninguna de las que mostro'
-    },
-    {
-      pregunta:'¿Cómo hace Gon para ganar el juego? Siendo que la vela que tenia se consumía muy rápido',
-      opciones:[
-        'Gon a apaga la vela de Sedokan',
-        'El viento apaga la vela de Sedokan',
-        'Con ayuda del nen Gon hace que su vela dure mas tiempo',
-        "Sedokan apaga su vela"
-      ],
-      imagen_src:'img/preguntas/velas2.jpg',
-      respuesta_correcta: 'Gon a apaga la vela de Sedokan'
-    },
-    {
-      pregunta:'¿Qué numero tenía el pin de Hisoka?',
-      opciones:[
-        '44',
-        '45',
-        '46',
-        "43"
-      ],
-      imagen_src:'img/preguntas/hisoka.jpg',
-      respuesta_correcta: '44'
-    }
+  {
+    pregunta:'¿Por qué Gon quiere convertirse en cazador?',
+    opciones:[
+      'Para conocer a su padre',
+      'Para viajar por el mundo',
+      'Para encontrar a su padre',
+      "Para saber porque su padre deseaba tanto ser un cazador"
+    ],
+    imagen_src:'img/preguntas/gon-chibi.jpg',
+    respuesta_correcta: 'Para saber porque su padre deseaba tanto ser un cazador'
+  },
+  {
+    pregunta:'¿A quién debía atrapar Gon para que Mito-san le dejara tomar el examen de cazador?',
+    opciones:[
+      'al señor del lago',
+      'a Ging',
+      'al oso-zorro',
+      "a una ballena"
+    ],
+    imagen_src:'img/preguntas/gon-chibi.jpg',
+    respuesta_correcta: 'al señor del lago'
+  },
+  {
+    pregunta:'¿Cuántos años tiene Gon?',
+    opciones:[
+      '12',
+      '11',
+      '10',
+      "13"
+    ],
+    imagen_src:'img/preguntas/gon-chibi.jpg',
+    respuesta_correcta: '12'
+  },
+  {
+    pregunta:'¿Cómo se llama la bestia mágica de la imagen?',
+    opciones:[
+      'kiriko',
+      'bestia mafutatsu',
+      'gran pisotón',
+      "hormiga kimera"
+    ],
+    imagen_src:'img/preguntas/Kiriko.png',
+    respuesta_correcta: 'kiriko'
+  },
+  {
+    pregunta:'¿Cuál es el nombre del aplasta novatos?',
+    opciones:[
+      'Tompa',
+      'Rompa',
+      'Tomoe',
+      "Tomki"
+    ],
+    imagen_src:'img/preguntas/tompa.png',
+    respuesta_correcta: 'Tompa'
+  },
+  {
+    pregunta:'¿Por qué Leorio quería tomar el examen de cazador?',
+    opciones:[
+      'Porque quería mucho dinero',
+      'Porque quiere ser medico',
+      'Porque quiere salvar a los niños de su pueblo',
+      "Porque quería ser el mejor cazador del mundo"
+    ],
+    imagen_src:'img/preguntas/leorio.png',
+    respuesta_correcta: 'Porque quería mucho dinero'
+  },
+  {
+    pregunta:'Cuando nadie pudo pasar la segunda etapa del examen de cazador rehicieron la prueba ¿de qué animal tenían que conseguir un huevo para poder completar esa etapa?',
+    opciones:[
+      'águila-araña',
+      'dragón',
+      'lagarto melanin',
+      "bestia voladora de seis piernas"
+    ],
+    imagen_src:'img/preguntas/aguila-araña.png',
+    respuesta_correcta: 'águila-araña'
+  },
+  {
+    pregunta:'En este juego ¿Qué vela había manipulado el preso Sedokan?',
+    opciones:[
+      'La vela corta',
+      'La vela larga',
+      'Ambas velas',
+      "Ninguna de las que mostro"
+    ],
+    imagen_src:'img/preguntas/velas.jpg',
+    respuesta_correcta: 'Ninguna de las que mostro'
+  },
+  {
+    pregunta:'¿Cómo hace Gon para ganar el juego? Siendo que la vela que tenia se consumía muy rápido',
+    opciones:[
+      'Gon a apaga la vela de Sedokan',
+      'El viento apaga la vela de Sedokan',
+      'Con ayuda del nen Gon hace que su vela dure mas tiempo',
+      "Sedokan apaga su vela"
+    ],
+    imagen_src:'img/preguntas/velas2.jpg',
+    respuesta_correcta: 'Gon a apaga la vela de Sedokan'
+  },
+  {
+    pregunta:'¿Qué numero tenía el pin de Hisoka?',
+    opciones:[
+      '44',
+      '45',
+      '46',
+      "43"
+    ],
+    imagen_src:'img/preguntas/hisoka.jpg',
+    respuesta_correcta: '44'
+  }
 ];
 
 var preguntas2 =
@@ -130,7 +129,7 @@ var preguntas2 =
       "todas son correctas"
     ],
     respuesta_correcta : "si",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -143,7 +142,7 @@ var preguntas2 =
       "9"
     ],
     respuesta_correcta : "8",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -156,7 +155,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "se mueren",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -165,11 +164,11 @@ var preguntas2 =
     [
       "Porque la cola no puede mover al perro",
       "Porque es otra parte del cuerpo que pueden mover, como las patas",
-      "Porque es su manera de expresarse para demostrar alegría, tristeza",
+      "Porque es su manera de expresarse para demostrar alegría, tristeza, etc",
       "Todas son correctas"
     ],
     respuesta_correcta : "Todas son correctas",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -182,7 +181,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "Los gatos no siempre caen de pie",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -195,7 +194,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "Todas son correctas",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -208,7 +207,7 @@ var preguntas2 =
       "Todos los inviernos"
     ],
     respuesta_correcta : "No",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -221,7 +220,7 @@ var preguntas2 =
       "Todos son correctas"
     ],
     respuesta_correcta : "Si",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -234,7 +233,7 @@ var preguntas2 =
       "Si"
     ],
     respuesta_correcta : "Su dieta se basa en eso",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -247,7 +246,7 @@ var preguntas2 =
       "2 kilogramos"
     ],
     respuesta_correcta : "30 gramos",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -260,7 +259,7 @@ var preguntas2 =
       "Todas las anteriores"
     ],
     respuesta_correcta : "El color azul",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -273,7 +272,7 @@ var preguntas2 =
       "Salamandra"
     ],
     respuesta_correcta : "Ratón doméstico",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -286,7 +285,7 @@ var preguntas2 =
       "salamandra"
     ],
     respuesta_correcta : "Camaleón",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -299,7 +298,7 @@ var preguntas2 =
       "nadie lo sabe"
     ],
     respuesta_correcta : "Las hembras",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -312,7 +311,7 @@ var preguntas2 =
       "nemo"
     ],
     respuesta_correcta : "el pez vela",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -325,7 +324,7 @@ var preguntas2 =
       "doris"
     ],
     respuesta_correcta : "La jirafa",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -338,7 +337,7 @@ var preguntas2 =
       "krilin"
     ],
     respuesta_correcta : "el escarabajo",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -351,7 +350,7 @@ var preguntas2 =
       "139"
     ],
     respuesta_correcta : "47",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -364,7 +363,7 @@ var preguntas2 =
       "Tiburón Peregrino"
     ],
     respuesta_correcta : "el Tiburón ballena",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   },
   {
@@ -377,7 +376,7 @@ var preguntas2 =
       "la cabra"
     ],
     respuesta_correcta : "la jirafa",
-    imagen_src : "",
+    imagen_src : "img/animalesLogo.jpg",
     dificil : false
   }
 ];
