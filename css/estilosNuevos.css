@@ -71,6 +71,11 @@ select
 	top: 41%;
 }
 
+.principal > h1
+{
+	background-color: black;
+}
+
 .enlaces
 {
 	position: relative;
