@@ -175,7 +175,7 @@ h1{background-color: black; border-radius: 10px;text-align: center;}
 	margin-right: 7px;
 }
 
-@media (max-width: 622px) and (min-width: 320px)
+@media (max-width: 622px) and (min-width: 310px)
 {
 	.header a
 	{
