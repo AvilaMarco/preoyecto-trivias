@@ -15,13 +15,13 @@
 
 .fondohunter
 {
-	background: url("../img/fondo.jpg") center;
+	background: url("../img/fondo.webp") center;
 	background-size: cover;
 }
 
 .fondoanimal
 {
-	background: url("../img/fondoamimal.jpg") no-repeat fixed center;
+	background: url("../img/fondoamimal.webp") no-repeat fixed center;
 	background-size: cover;
 }
 /*cambiar fondos con clases ↑*/
@@ -189,13 +189,13 @@ select
 	}
   .fondohunter
   {
-  	background: url("../img/fondo-celu.jpg") center;
+  	background: url("../img/fondo-celu.webp") center;
   	background-size: cover;
   }
 
   .fondoanimal
   {
-  	background: url("../img/fondoamimal.jpg") no-repeat fixed center;
+  	background: url("../img/fondoamimal.webp") no-repeat fixed center;
   	background-size: cover;
   }
 	.principal

@@ -13,7 +13,7 @@ var preguntas =
       'Para encontrar a su padre',
       "Para saber porque su padre deseaba tanto ser un cazador"
     ],
-    imagen_src:'img/preguntas/gon-chibi.jpg',
+    imagen_src:'img/preguntas/gon-chibi.webp',
     respuesta_correcta: 'Para saber porque su padre deseaba tanto ser un cazador'
   },
   {
@@ -24,7 +24,7 @@ var preguntas =
       'al oso-zorro',
       "a una ballena"
     ],
-    imagen_src:'img/preguntas/gon-chibi.jpg',
+    imagen_src:'img/preguntas/gon-chibi.webp',
     respuesta_correcta: 'al señor del lago'
   },
   {
@@ -35,7 +35,7 @@ var preguntas =
       '10',
       "13"
     ],
-    imagen_src:'img/preguntas/gon-chibi.jpg',
+    imagen_src:'img/preguntas/gon-chibi.webp',
     respuesta_correcta: '12'
   },
   {
@@ -46,7 +46,7 @@ var preguntas =
       'gran pisotón',
       "hormiga kimera"
     ],
-    imagen_src:'img/preguntas/Kiriko.png',
+    imagen_src:'img/preguntas/Kiriko.webp',
     respuesta_correcta: 'kiriko'
   },
   {
@@ -57,7 +57,7 @@ var preguntas =
       'Tomoe',
       "Tomki"
     ],
-    imagen_src:'img/preguntas/tompa.png',
+    imagen_src:'img/preguntas/tompa.webp',
     respuesta_correcta: 'Tompa'
   },
   {
@@ -68,7 +68,7 @@ var preguntas =
       'Porque quiere salvar a los niños de su pueblo',
       "Porque quería ser el mejor cazador del mundo"
     ],
-    imagen_src:'img/preguntas/leorio.png',
+    imagen_src:'img/preguntas/leorio.webp',
     respuesta_correcta: 'Porque quería mucho dinero'
   },
   {
@@ -79,7 +79,7 @@ var preguntas =
       'lagarto melanin',
       "bestia voladora de seis piernas"
     ],
-    imagen_src:'img/preguntas/hunterxLogo.png',
+    imagen_src:'img/preguntas/hunterxLogo.webp',
     respuesta_correcta: 'águila-araña'
   },
   {
@@ -90,7 +90,7 @@ var preguntas =
       'Ambas velas',
       "Ninguna de las que mostro"
     ],
-    imagen_src:'img/preguntas/velas.jpg',
+    imagen_src:'img/preguntas/velas.webp',
     respuesta_correcta: 'Ninguna de las que mostro'
   },
   {
@@ -101,7 +101,7 @@ var preguntas =
       'Con ayuda del nen Gon hace que su vela dure mas tiempo',
       "Sedokan apaga su vela"
     ],
-    imagen_src:'img/preguntas/velas2.jpg',
+    imagen_src:'img/preguntas/velas2.webp',
     respuesta_correcta: 'Gon a apaga la vela de Sedokan'
   },
   {
@@ -112,7 +112,7 @@ var preguntas =
       '46',
       "43"
     ],
-    imagen_src:'img/preguntas/hisoka.jpg',
+    imagen_src:'img/preguntas/hisoka.webp',
     respuesta_correcta: '44'
   }
 ];
@@ -129,7 +129,7 @@ var preguntas2 =
       "todas son correctas"
     ],
     respuesta_correcta : "si",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -142,7 +142,7 @@ var preguntas2 =
       "9"
     ],
     respuesta_correcta : "8",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -155,7 +155,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "se mueren",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -168,7 +168,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "Todas son correctas",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -181,7 +181,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "Los gatos no siempre caen de pie",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -194,7 +194,7 @@ var preguntas2 =
       "Todas son correctas"
     ],
     respuesta_correcta : "Todas son correctas",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -207,7 +207,7 @@ var preguntas2 =
       "Todos los inviernos"
     ],
     respuesta_correcta : "No",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -220,7 +220,7 @@ var preguntas2 =
       "Todos son correctas"
     ],
     respuesta_correcta : "Si",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -233,7 +233,7 @@ var preguntas2 =
       "Si"
     ],
     respuesta_correcta : "Su dieta se basa en eso",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -246,7 +246,7 @@ var preguntas2 =
       "2 kilogramos"
     ],
     respuesta_correcta : "30 gramos",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -259,7 +259,7 @@ var preguntas2 =
       "Todas las anteriores"
     ],
     respuesta_correcta : "El color azul",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -272,7 +272,7 @@ var preguntas2 =
       "Salamandra"
     ],
     respuesta_correcta : "Ratón doméstico",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -285,7 +285,7 @@ var preguntas2 =
       "salamandra"
     ],
     respuesta_correcta : "Camaleón",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -298,7 +298,7 @@ var preguntas2 =
       "nadie lo sabe"
     ],
     respuesta_correcta : "Las hembras",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -311,7 +311,7 @@ var preguntas2 =
       "nemo"
     ],
     respuesta_correcta : "el pez vela",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -324,7 +324,7 @@ var preguntas2 =
       "doris"
     ],
     respuesta_correcta : "La jirafa",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -337,7 +337,7 @@ var preguntas2 =
       "krilin"
     ],
     respuesta_correcta : "el escarabajo",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -350,7 +350,7 @@ var preguntas2 =
       "139"
     ],
     respuesta_correcta : "47",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -363,7 +363,7 @@ var preguntas2 =
       "Tiburón Peregrino"
     ],
     respuesta_correcta : "el Tiburón ballena",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   },
   {
@@ -376,7 +376,7 @@ var preguntas2 =
       "la cabra"
     ],
     respuesta_correcta : "la jirafa",
-    imagen_src : "img/animalesLogo.jpg",
+    imagen_src : "img/animalesLogo.webp",
     dificil : false
   }
 ];
